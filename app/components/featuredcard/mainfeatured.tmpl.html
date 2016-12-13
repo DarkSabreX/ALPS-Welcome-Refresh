@@ -1,0 +1,18 @@
+﻿<div flex md-theme="ALPSFeat" md-theme-watch>
+	<md-card class="featcontentcard" layout="row" flex>
+		<img flex ng-src="{{featured.img}}" class="md-card-image"/>
+		<div layout="column" layout-align="space-between" flex="50" layout-padding>
+			<md-card-title>
+				<md-card-title-text flex>
+					<span class="md-headline">{{featured.title}}</span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-content>
+				<p class="md-caption" flex>{{featured.blurb}}</p>
+			</md-card-content>
+			<md-card-actions flex="20">
+				<md-button class="md-raised" ng-href="{{featured.link}}">{{featured.linktitle}}</md-button>
+			</md-card-actions>
+		</div>
+	</md-card>
+</div>

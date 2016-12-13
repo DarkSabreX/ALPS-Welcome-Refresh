@@ -1,0 +1,72 @@
+﻿<div>
+	<md-card class="rightnavcard">
+		<md-toolbar class="md-primary themebar">
+			<div class="md-toolbar-tools themebartitle"><span>My Profile</span></div>
+		</md-toolbar>
+		<md-toolbar class="accentbar md-accent md-hue-1"></md-toolbar>
+		<md-button href="#" class="btn-no-margin">
+		  <md-card-content class="navbox">
+			<div class="icon-center">
+			  <ng-md-icon icon="person" size="64"></ng-md-icon>
+			</div>
+		  </md-card-content>
+		</md-button>
+	</md-card>
+</div>
+<div>
+	<md-card class="rightnavcard">
+		<md-toolbar class="md-primary-2 themebar">
+			<div class="md-toolbar-tools themebartitle">Search</div>
+		</md-toolbar>
+		<md-toolbar class="accentbar md-accent md-hue-1"></md-toolbar>
+		<md-button href="#" class="btn-no-margin">
+		  <md-card-content class="navbox">
+			<div class="icon-center">
+			  <ng-md-icon icon="search" size="64"></ng-md-icon>
+			</div>
+		  </md-card-content>
+		</md-button>
+	</md-card>
+</div>
+<div>
+	<md-card class="rightnavcard" layout="column">
+		<md-toolbar class="md-primary-2 themebar">
+			<div class="md-toolbar-tools themebartitle">Quick Links</div>
+		</md-toolbar>
+		<md-toolbar class="accentbar md-accent md-hue-1"></md-toolbar>
+		<div layout="column" layout-fill layout-align="space-between stretch">
+			<md-card-content flex class="quicklink-container">
+				<md-list class="md-dense" flex layout="row" layout-fill layout-wrap>
+					<md-list-item ng-repeat="linkopt in client.quickLinks.linkopts" class="md-2-line quicklink-item item-seperator" layout="row" layout-fill layout-wrap flex>
+						<quick-link ng-if="linkopt.type === 'link'" linkopt="linkopt" flex></quick-link>
+						<quick-toggle ng-if="linkopt.type === 'toggle'" linkopt="linkopt" flex></quick-toggle>
+					</md-list-item>
+					
+				</md-list>
+			</md-card-content>
+		</div>
+	</md-card>
+	<md-card class="rightnavcard">
+		<md-toolbar class="md-primary-2 themebar">
+			<div class="md-toolbar-tools themebartitle">Contact Us!</div>
+		</md-toolbar>
+		<md-toolbar class="accentbar md-accent md-hue-1"></md-toolbar>
+		<md-card-content layout="column" layout-align="center center">
+			<p>
+				<span class="md-caption">For ALPS Troubleshooting and Requests:</span>
+				<span><a href="mailto:ALPS@afni.com" target="_top">ALPS@afni.com</a></span>
+			</p>
+			<p>
+				<span class="md-caption">For New Content Development Requests:</span>
+				<span><a href="mailto:SSD@afni.com" target="_top">SSD@afni.com</a></span>
+			</p>
+		</md-card-content>
+	</md-card>
+	<md-card class="rightnavcard">
+		<md-toolbar class="accentbar md-accent md-hue-1"></md-toolbar>
+		<md-card-content layout="column" layout-align="center center" class="btn-no-margin">
+			<span><img src="../../../assets/img/top 125.jpg"/></span>
+		</md-card-content>
+	</md-card>
+</div>
+

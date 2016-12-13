@@ -1,0 +1,18 @@
+﻿{
+  "cards": [
+    {
+      "cardId": "1",
+      "title": "My Tasks",
+      "blurb": "Have any scheduled tasks? Not sure? Click the button to check out your Scheduled Tasks!",
+      "btnText": "Click Me!",
+      "link": "#"
+    },
+    {
+      "cardId": "2",
+      "title": "My Transcript",
+      "blurb": "Have any assigned training to do? Time to finish some incomplete training? Click here to go to your Transcript!",
+      "btnText": "Click Me!",
+      "link":  "#"
+    }
+  ]
+}

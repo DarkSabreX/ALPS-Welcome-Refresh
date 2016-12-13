@@ -1,0 +1,24 @@
+﻿<div>
+	<div layout="row" flex layout-fill ng-repeat="row in articles.rows track by row.id" class="featarea-2-container">
+		<md-card flex class="featarea-2" ng-repeat="card in row.cards track by card.id">
+			<md-toolbar class="accentbar md-accent md-hue-1"></md-toolbar>
+			<div flex layout="column" layout-align="space-between" flex layout-fill layout-padding>
+				 <md-card-title flex="15">
+				<md-card-title-text flex>
+					<span class="md-headline">{{card.title}}</span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-content flex="60">
+				<br />
+				<p class="md-caption">
+					{{card.blurb}} 
+				</p>
+			</md-card-content>
+			<md-card-actions flex="25">
+				<a ng-href="#">read more...</a>
+			</md-card-actions>
+			</div>
+			
+		</md-card>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+﻿{
+  "linkopts": [
+    {
+      "type": "toggle",
+      "title": "Universal Profile Areas",
+      "icon": "",
+      "subitems": [
+        {
+          "type": "link",
+          "title": "My Transcript",
+          "icon": "assignment",
+          "url": "#"
+        },
+        {
+          "type": "link",
+          "title": "My Actions",
+          "icon": "assignment",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "title": "My Tasks",
+      "icon": "date_range",
+      "url": "#"
+    },
+    {
+      "type": "link",
+      "title": "Events Calendar",
+      "icon": "date_range",
+      "url": "#"
+    },
+    {
+      "type": "link",
+      "title": "Browse for Training",
+      "icon": "date_range",
+      "url": "#"
+    },
+    {
+      "type": "toggle",
+      "title": "ALPS QRGs",
+      "icon": "",
+      "subitems": [
+        {
+          "type": "link",
+          "title": "Coming Soon!",
+          "icon": "assignment",
+          "url": "#"
+        }
+      ]
+    }
+  ] 
+}

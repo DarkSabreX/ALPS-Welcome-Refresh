@@ -1,0 +1,171 @@
+﻿.mainarea {
+    width: 1050px;
+    margin: 0 auto;
+}
+.wrapper {
+    min-width: 700px;
+}
+.accentbar {
+    min-height:6px;
+}
+.contentcontainer {
+    max-width: 695px;
+    min-width: 500px;
+}
+/*Welcome Card*/
+.welcomecard {
+    max-height: 264px;
+    height: 264px;
+    width: 680px;
+    max-width: 680px;
+}
+/*Learning Cards*/
+.featsmcard {
+    max-width: 330px;
+    width: 330px;
+    /*max-height: 196px;
+    height: 196px;*/
+}
+/*Featured Content Card*/
+.featcontentcard {
+    max-height: 239px;
+    height: 239px;
+    max-width: 695px;
+    min-width: 500px;
+}
+/*Secondary Featured Content Cards*/
+.featarea-2-container {
+    min-width: 515px;
+    max-width: 695px;
+}
+.featarea-2 {
+    height: 196px;
+    max-height: 239px;
+    min-width: 225px;
+}
+
+
+/*Right Nav Cards*/
+.rightnavcard {
+    width: 300px;
+}
+.themebar {
+    min-height:45px;
+}
+.themebartitle {
+    height: 45px;
+}
+
+.quicklink-container {
+    padding: 0;
+}
+.quicklink-button {
+    padding: 0;
+}
+md-list-item._md-no-proxy, md-list-item ._md-no-style, md-list-item .quicklink-item{
+    padding: 0;
+
+}
+.item-seperator {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.item-icon-center {
+    padding-top: 13px;
+
+}
+
+.icon-center {
+    text-align: center;
+}
+
+.animate-show {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.animate-show.ng-hide-remove, .animate-show.ng-hide-add {
+  -webkit-transition: 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -moz-transition: 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -ms-transition: 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    -o-transition: 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+    transition: 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+
+}
+
+.animate-show.ng-hide {
+	-webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    height: 0px;
+    opacity: 0;
+}
+
+.welcomepad {
+    padding-left: 30px;
+}
+ 
+/*Ribbon*/
+.ribbon {
+    font-size: 16px !important;
+    width: 60%;
+    left: 0;
+    bottom: 20px;
+    position: relative;
+ background: #3f51b5;
+ color: #fff;
+ text-align: center;
+ padding: .5em 2em; /* Adjust to suit */
+ margin: 2em auto 3em -1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+ .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #37469b;
+ z-index: -1;
+}
+
+
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #5e75fe transparent transparent transparent;
+ bottom: -1em;
+}
+
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.ribbon-protector { 
+    position: relative; 
+    z-index: 1; 
+}
+
+.alps-img {
+    display:block;
+    margin: auto;
+    width: 50%;
+}
+.navbox {
+    padding: 0;
+}
+.btn-no-margin {
+    margin: 0;
+}

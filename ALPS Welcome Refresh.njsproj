@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{7b94a2f5-90ff-4d97-b3a1-7d19e7da3805}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="index.html" />
+        <Content Include="welcomemockup.html" />
+        <Content Include="package.json" />
+        <Compile Include="app\app.module.js" />
+        <Compile Include="app\app.themeconfig.js" />
+        <Compile Include="app\shared\alpscontroller.alps.js" />
+        <Compile Include="app\shared\themecontroller.js" />
+        <Content Include="app\components\featuredcard\mainfeatured.tmpl.html" />
+        <Compile Include="app\components\featuredcard\mainfeatured.directive.js" />
+        <Compile Include="app\components\featuredcard\mainfeatured.factory.js" />
+        <Content Include="app\components\featurednav\featurednav.tmpl.html" />
+        <Compile Include="app\components\featurednav\featurednav.directive.js" />
+        <Compile Include="app\components\featurednav\featurednav.factory.js" />
+        <Content Include="app\components\quicklink\quicklink.tmpl.html" />
+        <Content Include="app\components\quicklink\quicktoggle.tmpl.html" />
+        <Compile Include="app\components\quicklink\quicklink.directive.js" />
+        <Compile Include="app\components\quicklink\quicklink.factory.js" />
+        <Compile Include="app\components\quicklink\quicktoggle.directive.js" />
+        <Content Include="app\components\secondaryfeaturedcard\secondaryfeatured.tmpl.html" />
+        <Compile Include="app\components\secondaryfeaturedcard\secondaryfeatured.directive.js" />
+        <Compile Include="app\components\secondaryfeaturedcard\secondaryfeatured.factory.js" />
+        <Content Include="app\shared\rightnavcards\rightnavcards.html" />
+        <Content Include="app\shared\welcomecard\welcomecard.html" />
+        <Content Include="assets\css\main.css" />
+        <Content Include="assets\css\robotofont.css" />
+        <Content Include="assets\img\ALPS logo full short.png" />
+        <Content Include="assets\img\ALPS logo short.png" />
+        <Content Include="assets\img\alpsfeatbg.png" />
+        <Content Include="assets\img\featcontent.png" />
+        <Content Include="assets\img\featcontentmockup.png" />
+        <Content Include="assets\img\newsimg.png" />
+        <Content Include="assets\img\top 125.jpg" />
+        <Content Include="sampledata\featured\mainfeatured.json" />
+        <Content Include="sampledata\featurednav\featurednavigation.json" />
+        <Content Include="sampledata\rightnav\quicklinks.json" />
+        <Content Include="sampledata\secondaryfeatured\secondaryfeatured.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="app" />
+        <Folder Include="app\components" />
+        <Folder Include="app\components\featuredcard" />
+        <Folder Include="app\components\featurednav" />
+        <Folder Include="app\components\quicklink" />
+        <Folder Include="app\components\secondaryfeaturedcard" />
+        <Folder Include="app\shared" />
+        <Folder Include="app\shared\rightnavcards" />
+        <Folder Include="app\shared\welcomecard" />
+        <Folder Include="assets" />
+        <Folder Include="assets\css" />
+        <Folder Include="assets\css\fonts" />
+        <Folder Include="assets\img" />
+        <Folder Include="assets\js" />
+        <Folder Include="sampledata" />
+        <Folder Include="sampledata\featured" />
+        <Folder Include="sampledata\featurednav" />
+        <Folder Include="sampledata\rightnav" />
+        <Folder Include="sampledata\secondaryfeatured" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>

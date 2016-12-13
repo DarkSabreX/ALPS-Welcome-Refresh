@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ALPS: Reach Higher</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/robotofont.css" />
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body ng-app="ALPSWelcome" ng-cloak>	
+	<div layout="column" layout-fill md-theme="ALPS">
+		<md-content flex layout-fill layout-align="start" ng-controller="clientController as client">
+			<div class="mainarea" layout="row">
+				<!--Main Content Area -->
+				<div flex layout="column" layout-fill class="contentcontainer">
+					<!--Welcome Card-->
+					<ng-include src="'app/shared/welcomecard/welcomecard.html'"></ng-include>
+					<!--Featured Nav Cards-->
+					<featured-nav-card nav="client.featuredNavCards"></featured-nav-card>
+					<!--Main Featured Content Cards-->
+					<main-featured-card class="md-accent" featured="client.mainFeatured"></main-featured-card>
+					<!--Secondary Featured Cards-->
+					<secondary-featured-card articles="client.secondaryFeatured"></secondary-featured-card> 
+				</div>
+				<!--Right Info Area -->
+				<div flex="25">
+					<ng-include src="'app/shared/rightnavcards/rightnavcards.html'"></ng-include>
+				</div>
+			</div>			
+		</md-content>
+	</div>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-messages/angular-messages.js"></script>
+	<script src="node_modules/angular-material-icons/angular-material-icons.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
+	<script src="app/app.module.js"></script>
+	<script src="app/app.themeconfig.js"></script>
+	<!--Featured Nav Card js files -->
+	<script src="app/components/featurednav/featurednav.directive.js"></script>
+	<script src="app/components/featurednav/featurednav.factory.js"></script>
+	<!--Featured Card js files -->
+	<script src="app/components/featuredcard/mainfeatured.directive.js"></script>
+	<script src="app/components/featuredcard/mainfeatured.factory.js"></script>
+	<!--Secondary Featured js Files -->
+	<script src="app/components/secondaryfeaturedcard/secondaryfeatured.directive.js"></script>
+	<script src="app/components/secondaryfeaturedcard/secondaryfeatured.factory.js"></script>
+	<!--QuickLink js Files -->
+	<script src="app/components/quicklink/quicklink.directive.js"></script>
+	<script src="app/components/quicklink/quicktoggle.directive.js"></script>
+	<script src="app/components/quicklink/quicklink.factory.js"></script>
+	<!--Change this link to point to production controllers for each client-->
+	<script src="app/shared/alpscontroller.alps.js"></script>
+</body>
+</html>

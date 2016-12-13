@@ -1,0 +1,14 @@
+﻿<div flex layout="column" layout-fill>
+	
+	<md-button ng-click="toggle(); qt.clickToggleIcon(); qt.clickAnimate()">
+		<div layout="row" flex layout-fill layout-align="space-between center">
+		    <p>{{linkopt.title}}</p>
+			<div class="item-icon-center">
+				<ng-md-icon class="material-icons" icon="{{qt.toggleIcon}}" size="40" options='{"easing":"linear", "duration":250}'></ng-md-icon>
+			</div>
+		</div>
+	</md-button>
+	<md-list class="md-dense animate-show" ng-show="qt.toggleStatus" ng-repeat="subitem in linkopt.subitems" layout="column" layout-fill flex>
+		<quick-link linkopt="subitem" flex></quick-link>
+	</md-list>
+</div>

@@ -1,0 +1,34 @@
+﻿{
+  "rows": [
+    {
+      "id": 1,
+      "name": "row1",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Secondary News Area",
+          "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor magna turpis, mattis eleifend ipsum tristique quis. Vestibulum ex metus, suscipit nec sapien id, pretium lobortis quam.",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "title": "Secondary News Area",
+          "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor magna turpis, mattis eleifend ipsum tristique quis. Vestibulum ex metus, suscipit nec sapien id, pretium lobortis quam.",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "row2",
+      "cards": [
+        {
+          "id": 1,
+          "title": "Secondary News Area",
+          "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor magna turpis, mattis eleifend ipsum tristique quis. Vestibulum ex metus, suscipit nec sapien id, pretium lobortis quam.",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

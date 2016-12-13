@@ -1,0 +1,20 @@
+﻿<div>
+	<div layout="row" flex layout-fill layout-align="space-between" class="featarea-2-container">
+		<md-card class="featsmcard" flex="50" ng-repeat="card in nav.cards">
+			<md-toolbar class="accentbar md-accent"></md-toolbar>
+			<md-card-title>
+				<md-card-title-text>
+					<span class="md-headline">{{card.title}}</span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-content>
+				<p class="md-caption">
+					{{card.blurb}} 
+				</p>
+			</md-card-content>
+			<md-card-actions>
+				<md-button class="md-raised" ng-href="{{card.link}}">{{card.btnText}}</md-button>
+			</md-card-actions>
+		</md-card>
+	</div>
+</div>
